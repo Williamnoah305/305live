@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRON WILLZ - Creative Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">IRON WILLZ</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#art">Art</a></li>
+                <li><a href="#integrations">Connect</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>IRON WILLZ</h1>
+            <p class="tagline">Music • Videos • Art</p>
+            <p class="subtitle">Crafted with passion, forged with steel</p>
+            <button class="cta-btn" onclick="document.getElementById('music').scrollIntoView({behavior: 'smooth'})">Explore Now</button>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="content-section">
+        <div class="section-header">
+            <h2><i class="fas fa-music"></i> Music</h2>
+            <p>Original tracks and collaborations</p>
+        </div>
+        <div id="music-gallery" class="gallery"></div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="content-section">
+        <div class="section-header">
+            <h2><i class="fas fa-video"></i> Videos</h2>
+            <p>Behind the scenes, performances & more</p>
+        </div>
+        <div id="videos-gallery" class="gallery"></div>
+    </section>
+
+    <!-- Art Section -->
+    <section id="art" class="content-section">
+        <div class="section-header">
+            <h2><i class="fas fa-palette"></i> Art</h2>
+            <p>Visual creations and designs</p>
+        </div>
+        <div id="art-gallery" class="gallery"></div>
+    </section>
+
+    <!-- Integrations Section -->
+    <section id="integrations" class="integrations-section">
+        <div class="section-header">
+            <h2><i class="fas fa-link"></i> Connect With Me</h2>
+            <p>Find me on your favorite platforms</p>
+        </div>
+        <div class="integrations-grid">
+            <div class="integration-card spotify">
+                <i class="fab fa-spotify"></i>
+                <h3>Spotify</h3>
+                <p>Listen to my music</p>
+                <a href="#" class="integration-link">Follow</a>
+            </div>
+            <div class="integration-card youtube">
+                <i class="fab fa-youtube"></i>
+                <h3>YouTube</h3>
+                <p>Watch my videos</p>
+                <a href="#" class="integration-link">Subscribe</a>
+            </div>
+            <div class="integration-card soundcloud">
+                <i class="fab fa-soundcloud"></i>
+                <h3>SoundCloud</h3>
+                <p>Discover more tracks</p>
+                <a href="#" class="integration-link">Follow</a>
+            </div>
+            <div class="integration-card instagram">
+                <i class="fab fa-instagram"></i>
+                <h3>Instagram</h3>
+                <p>Daily content & updates</p>
+                <a href="#" class="integration-link">Follow</a>
+            </div>
+            <div class="integration-card twitter">
+                <i class="fab fa-twitter"></i>
+                <h3>Twitter</h3>
+                <p>Stay connected</p>
+                <a href="#" class="integration-link">Follow</a>
+            </div>
+            <div class="integration-card tiktok">
+                <i class="fab fa-tiktok"></i>
+                <h3>TikTok</h3>
+                <p>Short-form content</p>
+                <a href="#" class="integration-link">Follow</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>Have a question or collaboration idea?</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 IRON WILLZ. All rights reserved.</p>
+        <p>Crafted with passion and steel</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

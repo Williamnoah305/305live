@@ -1,0 +1,29 @@
+{
+  "music": [
+    {
+      "title": "Your First Track",
+      "artist": "IRON WILLZ",
+      "description": "Replace this with your music details",
+      "date": "2026-05-23",
+      "link": "https://your-music-link.com"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Your First Video",
+      "artist": "IRON WILLZ",
+      "description": "Replace this with your video details",
+      "date": "2026-05-23",
+      "link": "https://your-video-link.com"
+    }
+  ],
+  "art": [
+    {
+      "title": "Your First Artwork",
+      "artist": "IRON WILLZ",
+      "description": "Replace this with your art details",
+      "date": "2026-05-23",
+      "link": "https://your-art-link.com"
+    }
+  ]
+}
