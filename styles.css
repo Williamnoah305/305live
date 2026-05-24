@@ -104,6 +104,14 @@ body {
     background: linear-gradient(135deg, var(--black) 0%, var(--dark-gray) 100%);
 }
 
+.portfolio-hero {
+    height: 60vh;
+}
+
+.about-hero {
+    height: 60vh;
+}
+
 .hero-gradient {
     position: absolute;
     top: 0;
@@ -176,6 +184,8 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 10px 30px rgba(255, 140, 66, 0.3);
+    display: inline-block;
+    text-decoration: none;
 }
 
 .cta-btn:hover {
@@ -424,6 +434,8 @@ body {
     border-radius: 20px;
     font-weight: 500;
     transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
 }
 
 .integration-link:hover {
@@ -480,6 +492,220 @@ body {
     box-shadow: 0 10px 25px rgba(157, 78, 221, 0.3);
 }
 
+/* Skills Grid */
+.skills-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.skill-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid var(--light-gray);
+}
+
+.skill-card i {
+    font-size: 3rem;
+    color: var(--purple);
+    margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--black);
+}
+
+.skill-card p {
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--purple);
+    box-shadow: 0 15px 40px rgba(157, 78, 221, 0.2);
+}
+
+/* About Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    color: var(--dark-gray);
+    line-height: 1.8;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, var(--purple), var(--blue));
+    padding: 2rem;
+    border-radius: 10px;
+    color: var(--white);
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Timeline */
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--purple), var(--blue));
+}
+
+.timeline-item {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: 0;
+    margin-right: 52%;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 52%;
+    margin-right: 0;
+    text-align: left;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: var(--white);
+    border: 3px solid var(--purple);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.timeline-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--black);
+}
+
+.timeline-content p {
+    color: var(--dark-gray);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-year {
+    display: inline-block;
+    background: var(--purple);
+    color: var(--white);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* Values Grid */
+.values-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.value-card {
+    background: var(--light-gray);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.value-card i {
+    font-size: 3rem;
+    color: var(--blue);
+    margin-bottom: 1rem;
+}
+
+.value-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--black);
+}
+
+.value-card p {
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.value-card:hover {
+    background: var(--white);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(157, 78, 221, 0.15);
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--dark-gray), var(--black));
+    padding: 4rem 2rem;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.cta-section .section-header h2,
+.cta-section .section-header p {
+    color: var(--white);
+}
+
+.cta-section .cta-btn {
+    margin-top: 2rem;
+}
+
 /* Footer */
 .footer {
     background: linear-gradient(135deg, var(--black) 0%, var(--dark-gray) 100%);
@@ -521,5 +747,24 @@ body {
 
     .integrations-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-left: 70px;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .timeline-marker {
+        left: 20px;
     }
 }
