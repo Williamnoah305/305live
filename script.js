@@ -9,6 +9,7 @@ let contentData = {
 document.addEventListener('DOMContentLoaded', () => {
     loadContent();
     setupEventListeners();
+    updateIntegrationLinks();
 });
 
 // Load content from content.json
@@ -148,7 +149,7 @@ function updateIntegrationLinks() {
         const card = document.querySelector(`.integration-card.${platform}`);
         if (card) {
             const link = card.querySelector('.integration-link');
-            if (link && integrations[platform] !== `https://twitter.com/YOUR_USERNAME`) {
+            if (link) {
                 link.href = integrations[platform];
             }
         }
