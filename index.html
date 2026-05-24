@@ -13,12 +13,14 @@
         <div class="nav-container">
             <div class="nav-logo">IRON WILLZ</div>
             <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#music">Music</a></li>
-                <li><a href="#videos">Videos</a></li>
-                <li><a href="#art">Art</a></li>
-                <li><a href="#integrations">Connect</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="connect.html">Connect</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -34,36 +36,119 @@
             <h1>IRON WILLZ</h1>
             <p class="tagline">Music • Videos • Art</p>
             <p class="subtitle">Crafted with passion, forged with steel</p>
-            <button class="cta-btn" onclick="document.getElementById('music').scrollIntoView({behavior: 'smooth'})">Explore Now</button>
+            <button class="cta-btn" onclick="location.href='portfolio.html'">Explore Now</button>
         </div>
         <div class="hero-gradient"></div>
     </section>
 
-    <!-- Music Section -->
-    <section id="music" class="content-section">
+    <!-- Quick Navigation Section -->
+    <section class="content-section">
         <div class="section-header">
-            <h2><i class="fas fa-music"></i> Music</h2>
-            <p>Original tracks and collaborations</p>
+            <h2>Welcome to My Creative Hub</h2>
+            <p>Explore my work across multiple disciplines</p>
         </div>
-        <div id="music-gallery" class="gallery"></div>
+        <div class="quick-nav-grid">
+            <div class="quick-nav-card">
+                <i class="fas fa-music"></i>
+                <h3>Music</h3>
+                <p>Listen to my latest tracks, EPs, and collaborations</p>
+                <a href="music.html" class="nav-link">Explore Music →</a>
+            </div>
+            <div class="quick-nav-card">
+                <i class="fas fa-video"></i>
+                <h3>Videos</h3>
+                <p>Watch music videos, vlogs, and behind-the-scenes content</p>
+                <a href="videos.html" class="nav-link">Explore Videos →</a>
+            </div>
+            <div class="quick-nav-card">
+                <i class="fas fa-palette"></i>
+                <h3>Art</h3>
+                <p>Discover my graphic design and digital artwork</p>
+                <a href="art.html" class="nav-link">Explore Art →</a>
+            </div>
+            <div class="quick-nav-card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Portfolio</h3>
+                <p>View my complete portfolio and professional projects</p>
+                <a href="portfolio.html" class="nav-link">View Portfolio →</a>
+            </div>
+        </div>
     </section>
 
-    <!-- Videos Section -->
-    <section id="videos" class="content-section">
+    <!-- Featured Content Section -->
+    <section id="featured" class="content-section">
         <div class="section-header">
-            <h2><i class="fas fa-video"></i> Videos</h2>
-            <p>Behind the scenes, performances & more</p>
+            <h2><i class="fas fa-star"></i> Featured</h2>
+            <p>Latest releases and highlights</p>
         </div>
-        <div id="videos-gallery" class="gallery"></div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <div class="gallery-item-image">
+                    <i class="fas fa-music"></i>
+                </div>
+                <div class="gallery-item-content">
+                    <div class="gallery-item-title">Summer Vibes</div>
+                    <div class="gallery-item-artist">Latest Release</div>
+                    <div class="gallery-item-description">Brand new track blending electronic and smooth melodies</div>
+                    <div class="gallery-item-date">May 2026</div>
+                    <a href="music.html" class="gallery-link">Listen now →</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-image">
+                    <i class="fas fa-video"></i>
+                </div>
+                <div class="gallery-item-content">
+                    <div class="gallery-item-title">Behind The Music</div>
+                    <div class="gallery-item-artist">Documentary Series</div>
+                    <div class="gallery-item-description">Watch the creative process unfold in this exclusive series</div>
+                    <div class="gallery-item-date">Now Playing</div>
+                    <a href="videos.html" class="gallery-link">Watch now →</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-image">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <div class="gallery-item-content">
+                    <div class="gallery-item-title">New Brand Identity</div>
+                    <div class="gallery-item-artist">Design Collection</div>
+                    <div class="gallery-item-description">Updated visual identity and branding system</div>
+                    <div class="gallery-item-date">2026</div>
+                    <a href="art.html" class="gallery-link">See designs →</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Art Section -->
-    <section id="art" class="content-section">
+    <!-- About Preview Section -->
+    <section id="about-preview" class="content-section">
         <div class="section-header">
-            <h2><i class="fas fa-palette"></i> Art</h2>
-            <p>Visual creations and designs</p>
+            <h2><i class="fas fa-user"></i> About IRON WILLZ</h2>
         </div>
-        <div id="art-gallery" class="gallery"></div>
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Multi-Talented Creative Professional</h2>
+                <p>I'm a passionate music producer, video creator, and graphic designer dedicated to crafting innovative content across multiple creative disciplines.</p>
+                <p>With over 5 years of experience in the creative industry, I've developed a unique approach that combines technical expertise with artistic vision.</p>
+                <p>Every project is an opportunity to push creative boundaries and create work that resonates with audiences.</p>
+                <a href="about.html" class="cta-btn">Learn More About Me</a>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">Community Followers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Integrations Section -->
@@ -77,37 +162,37 @@
                 <i class="fab fa-spotify"></i>
                 <h3>Spotify</h3>
                 <p>Listen to my music</p>
-                <a href="#" class="integration-link">Follow</a>
+                <a href="https://open.spotify.com/artist/YOUR_SPOTIFY_ID" target="_blank" class="integration-link">Follow</a>
             </div>
             <div class="integration-card youtube">
                 <i class="fab fa-youtube"></i>
                 <h3>YouTube</h3>
                 <p>Watch my videos</p>
-                <a href="#" class="integration-link">Subscribe</a>
+                <a href="https://www.youtube.com/@YOUR_CHANNEL" target="_blank" class="integration-link">Subscribe</a>
             </div>
             <div class="integration-card soundcloud">
                 <i class="fab fa-soundcloud"></i>
                 <h3>SoundCloud</h3>
                 <p>Discover more tracks</p>
-                <a href="#" class="integration-link">Follow</a>
+                <a href="https://soundcloud.com/YOUR_USERNAME" target="_blank" class="integration-link">Follow</a>
             </div>
             <div class="integration-card instagram">
                 <i class="fab fa-instagram"></i>
                 <h3>Instagram</h3>
                 <p>Daily content & updates</p>
-                <a href="#" class="integration-link">Follow</a>
+                <a href="https://instagram.com/YOUR_USERNAME" target="_blank" class="integration-link">Follow</a>
             </div>
             <div class="integration-card twitter">
                 <i class="fab fa-twitter"></i>
                 <h3>Twitter</h3>
                 <p>Stay connected</p>
-                <a href="#" class="integration-link">Follow</a>
+                <a href="https://twitter.com/YOUR_USERNAME" target="_blank" class="integration-link">Follow</a>
             </div>
             <div class="integration-card tiktok">
                 <i class="fab fa-tiktok"></i>
                 <h3>TikTok</h3>
                 <p>Short-form content</p>
-                <a href="#" class="integration-link">Follow</a>
+                <a href="https://tiktok.com/@YOUR_USERNAME" target="_blank" class="integration-link">Follow</a>
             </div>
         </div>
     </section>
@@ -118,12 +203,10 @@
             <h2>Get In Touch</h2>
             <p>Have a question or collaboration idea?</p>
         </div>
-        <form class="contact-form" id="contactForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
+        <div class="contact-link-buttons">
+            <a href="contact.html" class="cta-btn">Contact Me</a>
+            <a href="connect.html" class="cta-btn">Connect</a>
+        </div>
     </section>
 
     <!-- Footer -->
